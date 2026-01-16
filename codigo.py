@@ -51,7 +51,7 @@ for linha in tabela.index:
     pyautogui.write(categoria)
     pyautogui.press("tab")
     #preço
-    preco = str(tabela.loc[linha, "preco_unitario"])
+    preco_unitario = str(tabela.loc[linha, "preco_unitario"])
     pyautogui.write(preco_unitario)
     pyautogui.press("tab")
     #custo
