@@ -36,33 +36,33 @@ for linha in tabela.index:
     #codigo
     pyautogui.click(x=643, y=259)
     codigo = str(tabela.loc[linha, "codigo"])
-    pyautogui.write("codigo")
+    pyautogui.write(codigo)
     pyautogui.press("tab")
     #marca
     marca  = str(tabela.loc[linha, "marca"])
-    pyautogui.write("marca")    
+    pyautogui.write(marca)    
     pyautogui.press("tab")
     #tipo
     tipo  = str(tabela.loc[linha, "tipo"])
-    pyautogui.write("tipo")   
+    pyautogui.write(tipo)   
     pyautogui.press("tab")
     #categoria
     categoria = str(tabela.loc[linha, "categoria"])
-    pyautogui.write("categoria")
+    pyautogui.write(categoria)
     pyautogui.press("tab")
     #preço
     preco = str(tabela.loc[linha, "preco_unitario"])
-    pyautogui.write("preco")
+    pyautogui.write(preco_unitario)
     pyautogui.press("tab")
     #custo
     custo = str(tabela.loc[linha, "custo"])
-    pyautogui.write("custo")
+    pyautogui.write(custo)
     pyautogui.press("tab")
     #obs
     obs = str(tabela.loc[linha, "obs"])
     if obs != "nan":
         pyautogui.write(obs)
-    pyautogui.write("obs")
+    pyautogui.write(obs)
     pyautogui.press("tab") #passar par o enviar
     pyautogui.press("enter") #enviou
     pyautogui.scroll(5000)#volta pro inicio
